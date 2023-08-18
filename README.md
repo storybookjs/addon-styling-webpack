@@ -1,4 +1,8 @@
-# `@storybook/addon-styling`
+<div style="margin: 0 auto; text-align: center; padding-bottom: 20px;">
+  <img src="https://raw.githubusercontent.com/storybookjs/addon-styling-webpack/3b88daa822e57b7e691cd0b77d70ac5582410f8a/.github/media/styling.svg" alt="addon-styling-webpack Logo" width="150" height="150" align="center">
+</div>
+
+# `@storybook/addon-styling-webpack`
 
 Get started in Storybook 7 faster with popular styling tools.
 
