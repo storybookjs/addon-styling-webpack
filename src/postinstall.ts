@@ -9,7 +9,11 @@ const PACKAGE_MANAGER_TO_COMMAND: Record<PackageManagers, string> = {
   yarn2: "yarn dlx",
 };
 
-const automigrate = async (packageManager: PackageManagers) => {
+const automigrate = async ({
+  packageManager,
+}: {
+  packageManager: PackageManagers;
+}) => {
   const command = PACKAGE_MANAGER_TO_COMMAND[packageManager];
   await spawn(command, ["@storybook/auto-config", "styling"], {
     stdio: "inherit",
