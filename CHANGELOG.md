@@ -1,3 +1,15 @@
+# v0.0.4 (Tue Sep 05 2023)
+
+#### 🐛 Bug Fix
+
+- Use npx for yarn1 users [#5](https://github.com/storybookjs/addon-styling-webpack/pull/5) ([@Integrayshaun](https://github.com/Integrayshaun))
+
+#### Authors: 1
+
+- Shaun Evening ([@Integrayshaun](https://github.com/Integrayshaun))
+
+---
+
 # v0.0.3 (Wed Aug 30 2023)
 
 #### 🐛 Bug Fix
