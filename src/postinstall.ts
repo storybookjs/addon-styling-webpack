@@ -5,7 +5,7 @@ type PackageManagers = "npm" | "pnpm" | "yarn1" | "yarn2";
 const PACKAGE_MANAGER_TO_COMMAND: Record<PackageManagers, string> = {
   npm: "npx",
   pnpm: "pnpm dlx",
-  yarn1: "yarn dlx",
+  yarn1: "npx",
   yarn2: "yarn dlx",
 };
 
