@@ -9,16 +9,38 @@ const PACKAGE_MANAGER_TO_COMMAND: Record<PackageManagers, string> = {
   yarn2: "yarn dlx",
 };
 
+const selectPackageManagerCommand = (packageManager: PackageManagers): string =>
+  PACKAGE_MANAGER_TO_COMMAND[packageManager];
+
+const spawnPackageManagerScript = async (
+  packageManager: PackageManagers,
+  args: string[]
+) => {
+  const command = selectPackageManagerCommand(packageManager);
+
+  const [pm, ...rest] = command.split(" ");
+
+  await spawn(pm, [...rest, ...args], {
+    stdio: "inherit",
+    cwd: process.cwd(),
+    shell: true,
+  });
+};
+
 const automigrate = async ({
-  packageManager,
+  packageManager = "npm",
 }: {
   packageManager: PackageManagers;
 }) => {
-  const command = PACKAGE_MANAGER_TO_COMMAND[packageManager];
-  await spawn(command, ["@storybook/auto-config", "styling"], {
-    stdio: "inherit",
-    cwd: process.cwd(),
-  });
+  try {
+    await spawnPackageManagerScript(packageManager, [
+      "@storybook/auto-config",
+      "styling",
+    ]);
+  } catch (e) {
+    console.error(e);
+    process.exit(1);
+  }
 };
 
 export default automigrate;
