@@ -1,3 +1,15 @@
+# v0.0.5 (Thu Oct 05 2023)
+
+#### 🐛 Bug Fix
+
+- Run command in shell for windows [#8](https://github.com/storybookjs/addon-styling-webpack/pull/8) ([@Integrayshaun](https://github.com/Integrayshaun))
+
+#### Authors: 1
+
+- Shaun Evening ([@Integrayshaun](https://github.com/Integrayshaun))
+
+---
+
 # v0.0.4 (Tue Sep 05 2023)
 
 #### 🐛 Bug Fix
