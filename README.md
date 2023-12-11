@@ -147,7 +147,7 @@ Below are a few popular configurations for common styling tools to get you start
           "style-loader",
           "css-loader",
           {
-            loader: "sass-loader"
+            loader: "sass-loader",
             options: { implementation: require.resolve("sass") }
           },
         ],
@@ -170,7 +170,7 @@ Below are a few popular configurations for common styling tools to get you start
           "style-loader",
           "css-loader",
           {
-            loader: "less-loader"
+            loader: "less-loader",
             options: { implementation: require.resolve("less") }
           },
         ],
