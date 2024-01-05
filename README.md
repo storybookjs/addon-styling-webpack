@@ -78,10 +78,11 @@ It can also take Webpack plugins to add to the Storybook config.
 ```
 
 ### 🧩 Popular Configurations
-Below are a few popular configurations for common styling tools to get you started. More complex configurations are possible by combining the different rules below.****
+Below are a few popular configurations for common styling tools to get you started. More complex configurations are possible by combining the different rules below.
 
 #### PostCSS
 ```js
+// Often used for tailwind
 {
   name: '@storybook/addon-styling-webpack',
   options: {
@@ -106,6 +107,8 @@ Below are a few popular configurations for common styling tools to get you start
   }
 }
 ```
+
+You can also take a look at this [example project](https://stackblitz.com/edit/github-5njuww?file=.storybook%2Fmain.ts) that uses PostCSS for **Tailwind** with Storybook:
 
 #### CSS Modules
 ```js
@@ -221,6 +224,17 @@ Below are a few popular configurations for common styling tools to get you start
   }
 }
 ```
+
+## Troubleshooting
+
+<details>
+  <summary>
+    This isn't working in my monorepo.
+  </summary>
+
+  Monorepos are a more advanced setup that may require a bit more configuration. To find out more. Refer to the Storybook FAQs on [monorepos](https://storybook.js.org/docs/faq#how-do-i-fix-module-resolution-in-special-environments).
+  
+</details>
 
 ## 🤝 Contributing
 
