@@ -3,6 +3,7 @@ import { defineConfig } from "tsup";
 export default defineConfig((options) => [
   {
     entry: ["src/index.ts", "src/preset.ts"],
+    outDir: "./dist",
     splitting: false,
     minify: !options.watch,
     format: ["cjs", "esm"],
