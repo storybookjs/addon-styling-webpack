@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-styling-webpack",
-  "version": "0.0.6",
+  "version": "1.0.0-next.0",
   "description": "A base addon for configuring popular styling tools in Webpack",
   "keywords": [
     "style",
@@ -49,21 +49,20 @@
     "release": "pnpm build && auto shipit"
   },
   "dependencies": {
-    "@storybook/node-logger": "^7.0.12"
+    "@storybook/node-logger": "^8.0.0-alpha.10"
   },
   "devDependencies": {
-    "@types/node": "^16.0.0",
-    "auto": "^10.3.0",
-    "prettier": "^2.8.0",
+    "@types/node": "^18.0.0",
+    "auto": "^11.0.4",
+    "prettier": "^3.2.0",
     "rimraf": "^3.0.2",
     "tsup": "^6.7.0",
-    "typescript": "^4.9.0",
+    "typescript": "^5.3.0",
     "webpack": "^5.0.0"
   },
   "peerDependencies": {
     "webpack": "^5.0.0"
   },
-  "packageManager": "yarn@3.6.1",
   "publishConfig": {
     "access": "public"
   },
