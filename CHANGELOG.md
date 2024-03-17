@@ -1,3 +1,16 @@
+# v0.0.7 (Sun Mar 17 2024)
+
+#### 🐛 Bug Fix
+
+- Upgrade auto [#21](https://github.com/storybookjs/addon-styling-webpack/pull/21) ([@shilman](https://github.com/shilman))
+
+#### Authors: 2
+
+- Michael Shilman ([@shilman](https://github.com/shilman))
+- Shaun Evening ([@ShaunEvening](https://github.com/ShaunEvening))
+
+---
+
 # v0.0.6 (Wed Jan 03 2024)
 
 #### 🐛 Bug Fix
