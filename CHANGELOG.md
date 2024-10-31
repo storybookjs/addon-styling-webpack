@@ -1,3 +1,15 @@
+# v1.0.1 (Thu Oct 31 2024)
+
+#### 🐛 Bug Fix
+
+- Fix: `node-logger` error when using Storybook 8.4+ [#25](https://github.com/storybookjs/addon-styling-webpack/pull/25) ([@botonddombi](https://github.com/botonddombi))
+
+#### Authors: 1
+
+- Botond Dombi ([@botonddombi](https://github.com/botonddombi))
+
+---
+
 # v0.0.7 (Sun Mar 17 2024)
 
 #### 🐛 Bug Fix
