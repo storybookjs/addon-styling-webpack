@@ -1,3 +1,4 @@
+import picocolors from "picocolors";
 import { logger, colors } from "@storybook/node-logger";
 import type { RuleSetRule, Configuration as WebpackConfig } from "webpack";
 import type { AddonStylingOptions } from "./types";
@@ -13,15 +14,15 @@ export function webpackFinal(
   { rules, plugins }: AddonStylingOptions = {}
 ) {
   logger.info(
-    `=> [${colors.pink.bold(
+    `=> [${picocolors.bold(colors.pink(
       "@storybook/addon-styling-webpack"
-    )}] Applying custom Storybook webpack configuration styling.`
+    ))}] Applying custom Storybook webpack configuration styling.`
   );
   if (plugins && plugins.length) {
     logger.info(
-      `=> [${colors.pink.bold(
+      `=> [${picocolors.bold(colors.pink(
         "@storybook/addon-styling-webpack"
-      )}] Adding given plugins to Storybook webpack configuration.`
+      ))}] Adding given plugins to Storybook webpack configuration.`
     );
     config.plugins = config.plugins || [];
     config.plugins.push(...plugins);
@@ -29,9 +30,9 @@ export function webpackFinal(
 
   if (rules && rules.length) {
     logger.info(
-      `=> [${colors.pink.bold(
+      `=> [${picocolors.bold(colors.pink(
         "@storybook/addon-styling-webpack"
-      )}] Replacing Storybook's webpack rules for styles with given rules.`
+      ))}] Replacing Storybook's webpack rules for styles with given rules.`
     );
 
     if (!config.module?.rules) {
