@@ -13,13 +13,13 @@ export function webpackFinal(
   { rules, plugins }: AddonStylingOptions = {}
 ) {
   logger.info(
-    `=> [${colors.pink.bold(
+    `=> [${colors.pink(
       "@storybook/addon-styling-webpack"
     )}] Applying custom Storybook webpack configuration styling.`
   );
   if (plugins && plugins.length) {
     logger.info(
-      `=> [${colors.pink.bold(
+      `=> [${colors.pink(
         "@storybook/addon-styling-webpack"
       )}] Adding given plugins to Storybook webpack configuration.`
     );
@@ -29,7 +29,7 @@ export function webpackFinal(
 
   if (rules && rules.length) {
     logger.info(
-      `=> [${colors.pink.bold(
+      `=> [${colors.pink(
         "@storybook/addon-styling-webpack"
       )}] Replacing Storybook's webpack rules for styles with given rules.`
     );
