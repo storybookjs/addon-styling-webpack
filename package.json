@@ -45,8 +45,7 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "pnpm build --watch",
-    "clean": "rimraf dist && rimraf bin",
-    "release": "pnpm build && auto shipit"
+    "release": "auto shipit"
   },
   "devDependencies": {
     "@types/node": "^22.15.29",
