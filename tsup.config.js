@@ -25,7 +25,7 @@ export default defineConfig((options) => [
     minify: !options.watch,
     format: ["cjs"],
     treeshake: true,
-    target: "node16",
+    target: "node20",
     clean: true,
     platform: "node",
     esbuildOptions(options) {

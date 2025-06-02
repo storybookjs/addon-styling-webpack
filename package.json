@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-styling-webpack",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A base addon for configuring popular styling tools in Webpack",
   "keywords": [
     "style",
@@ -20,14 +20,14 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.mjs"
     },
     "./preset": {
+      "types": "./dist/preset.d.ts",
       "require": "./dist/preset.js",
-      "import": "./dist/preset.mjs",
-      "types": "./dist/preset.d.ts"
+      "import": "./dist/preset.mjs"
     },
     "./package.json": "./package.json",
     "./postinstall": "./postinstall.js"
@@ -48,17 +48,15 @@
     "clean": "rimraf dist && rimraf bin",
     "release": "pnpm build && auto shipit"
   },
-  "dependencies": {
-    "@storybook/node-logger": "^8.0.0-alpha.10"
-  },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "auto": "^11.1.1",
-    "prettier": "^3.2.0",
-    "rimraf": "^3.0.2",
-    "tsup": "^6.7.0",
-    "typescript": "^5.3.0",
-    "webpack": "^5.0.0"
+    "@types/node": "^22.15.29",
+    "auto": "^11.3.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "storybook": "^9.0.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9"
   },
   "peerDependencies": {
     "webpack": "^5.0.0"
