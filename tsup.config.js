@@ -11,7 +11,7 @@ export default defineConfig((options) => [
       resolve: true,
     },
     treeshake: true,
-    sourcemap: true,
+    sourcemap: false,
     clean: true,
     platform: "browser",
     esbuildOptions(options) {
