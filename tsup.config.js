@@ -11,7 +11,7 @@ export default defineConfig((options) => [
       resolve: true,
     },
     treeshake: true,
-    sourcemap: true,
+    sourcemap: false,
     clean: true,
     platform: "browser",
     esbuildOptions(options) {
@@ -25,7 +25,7 @@ export default defineConfig((options) => [
     minify: !options.watch,
     format: ["cjs"],
     treeshake: true,
-    target: "node16",
+    target: "node20",
     clean: true,
     platform: "node",
     esbuildOptions(options) {

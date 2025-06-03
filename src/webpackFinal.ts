@@ -1,4 +1,4 @@
-import { logger, colors } from "@storybook/node-logger";
+import { logger, colors } from "storybook/internal/node-logger";
 import type { RuleSetRule, Configuration as WebpackConfig } from "webpack";
 import type { AddonStylingOptions } from "./types";
 
@@ -10,18 +10,18 @@ export const isRuleForStyles = (rule: RuleSetRule) =>
 
 export function webpackFinal(
   config: WebpackConfig,
-  { rules, plugins }: AddonStylingOptions = {}
+  { rules, plugins }: AddonStylingOptions = {},
 ) {
   logger.info(
     `=> [${colors.pink(
-      "@storybook/addon-styling-webpack"
-    )}] Applying custom Storybook webpack configuration styling.`
+      "@storybook/addon-styling-webpack",
+    )}] Applying custom Storybook webpack configuration styling.`,
   );
   if (plugins && plugins.length) {
     logger.info(
       `=> [${colors.pink(
-        "@storybook/addon-styling-webpack"
-      )}] Adding given plugins to Storybook webpack configuration.`
+        "@storybook/addon-styling-webpack",
+      )}] Adding given plugins to Storybook webpack configuration.`,
     );
     config.plugins = config.plugins || [];
     config.plugins.push(...plugins);
@@ -30,19 +30,19 @@ export function webpackFinal(
   if (rules && rules.length) {
     logger.info(
       `=> [${colors.pink(
-        "@storybook/addon-styling-webpack"
-      )}] Replacing Storybook's webpack rules for styles with given rules.`
+        "@storybook/addon-styling-webpack",
+      )}] Replacing Storybook's webpack rules for styles with given rules.`,
     );
 
     if (!config.module?.rules) {
       throw new Error(
-        "webpackFinal received a rules option but config.module.rules is not an array"
+        "webpackFinal received a rules option but config.module.rules is not an array",
       );
     }
 
     // Remove any existing rules for styles
     config.module.rules = config.module.rules.filter(
-      (rule) => typeof rule === "object" && !isRuleForStyles(rule)
+      (rule) => typeof rule === "object" && rule && !isRuleForStyles(rule),
     );
 
     // Add the new rules for styles
