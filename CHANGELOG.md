@@ -1,3 +1,16 @@
+# v2.0.0 (Tue Jun 03 2025)
+
+#### 💥 Breaking Change
+
+- feat: Port to Storybook 9 [#31](https://github.com/storybookjs/addon-styling-webpack/pull/31) ([@Sidnioulz](https://github.com/Sidnioulz) [@ndelangen](https://github.com/ndelangen))
+
+#### Authors: 2
+
+- Norbert de Langen ([@ndelangen](https://github.com/ndelangen))
+- Steve Dodier-Lazaro ([@Sidnioulz](https://github.com/Sidnioulz))
+
+---
+
 # v1.0.1 (Thu Oct 31 2024)
 
 #### 🐛 Bug Fix
