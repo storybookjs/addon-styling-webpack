@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-styling-webpack",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "description": "A base addon for configuring popular styling tools in Webpack",
   "keywords": [
     "style",
