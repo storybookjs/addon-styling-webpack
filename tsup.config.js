@@ -6,7 +6,7 @@ export default defineConfig((options) => [
     outDir: "./dist",
     splitting: false,
     minify: !options.watch,
-    format: ["cjs", "esm"],
+    format: ["esm"],
     dts: {
       resolve: true,
     },
@@ -23,7 +23,7 @@ export default defineConfig((options) => [
     outDir: "./bin",
     splitting: false,
     minify: !options.watch,
-    format: ["cjs"],
+    format: ["esm"],
     treeshake: true,
     target: "node20",
     clean: true,

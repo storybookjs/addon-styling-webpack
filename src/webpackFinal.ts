@@ -1,6 +1,6 @@
 import { logger, colors } from "storybook/internal/node-logger";
 import type { RuleSetRule, Configuration as WebpackConfig } from "webpack";
-import type { AddonStylingOptions } from "./types";
+import type { AddonStylingOptions } from "./types.js";
 
 export const isRuleForStyles = (rule: RuleSetRule) =>
   rule.test instanceof RegExp &&
