@@ -4,15 +4,16 @@ export default defineConfig((options) => [
   {
     entry: ['src/index.ts', 'src/preset.ts'],
     outDir: './dist',
-    splitting: false,
-    minify: !options.watch,
+    splitting: true,
     format: ['esm'],
-    dts: {
-      resolve: true,
-    },
+dts: true,
     treeshake: true,
     sourcemap: false,
-    clean: true,
+    /*
+     keep this line commented until https://github.com/egoist/tsup/issues/1270 is resolved
+     clean: options.watch ? false : true,
+    */
+    clean: false,
     platform: 'browser',
     esbuildOptions(options) {
       options.conditions = ['module'];
@@ -21,12 +22,11 @@ export default defineConfig((options) => [
   {
     entry: ['src/postinstall.ts'],
     outDir: './bin',
-    splitting: false,
-    minify: !options.watch,
+splitting: true,
     format: ['esm'],
     treeshake: true,
     target: 'node20',
-    clean: true,
+    clean: false,
     platform: 'node',
     esbuildOptions(options) {
       options.conditions = ['module'];

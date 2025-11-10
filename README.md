@@ -12,7 +12,7 @@ Get started in Storybook 7 faster with popular styling tools.
 - 🧩 Configuration templates for popular tools
 - ⚡️ Options for CSS modules, PostCSS, Sass, Less, and Vanilla-extract
 
-## 🏁 Getting
+## 🏁 Getting Started
 
 ### 🤖 Automatic configuration
 
