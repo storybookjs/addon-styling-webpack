@@ -12,7 +12,7 @@ Get started in Storybook 7 faster with popular styling tools.
 - 🧩 Configuration templates for popular tools
 - ⚡️ Options for CSS modules, PostCSS, Sass, Less, and Vanilla-extract
 
-## 🏁 Getting 
+## 🏁 Getting
 
 ### 🤖 Automatic configuration
 
@@ -78,9 +78,11 @@ It can also take Webpack plugins to add to the Storybook config.
 ```
 
 ### 🧩 Popular Configurations
+
 Below are a few popular configurations for common styling tools to get you started. More complex configurations are possible by combining the different rules below.
 
 #### PostCSS
+
 ```js
 // Often used for tailwind
 {
@@ -99,7 +101,7 @@ Below are a few popular configurations for common styling tools to get you start
           {
             // Gets options from `postcss.config.js` in your project root
             loader: 'postcss-loader',
-            options: { implementation: require.resolve('postcss') }
+            options: { implementation: import.meta.resolve('postcss') }
           }
         ],
       }
@@ -111,6 +113,7 @@ Below are a few popular configurations for common styling tools to get you start
 You can also take a look at this [example project](https://stackblitz.com/edit/github-5njuww?file=.storybook%2Fmain.ts) that uses PostCSS for **Tailwind** with Storybook:
 
 #### CSS Modules
+
 ```js
 {
   name: '@storybook/addon-styling-webpack',
@@ -138,6 +141,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
 ```
 
 #### Sass
+
 ```js
 {
   name: '@storybook/addon-styling-webpack',
@@ -151,7 +155,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
           "css-loader",
           {
             loader: "sass-loader",
-            options: { implementation: require.resolve("sass") }
+            options: { implementation: import.meta.resolve("sass") }
           },
         ],
       },
@@ -161,6 +165,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
 ```
 
 #### Less
+
 ```js
 {
   name: '@storybook/addon-styling-webpack',
@@ -174,7 +179,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
           "css-loader",
           {
             loader: "less-loader",
-            options: { implementation: require.resolve("less") }
+            options: { implementation: import.meta.resolve("less") }
           },
         ],
       },
@@ -184,6 +189,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
 ```
 
 #### Vanilla-extract
+
 ```js
 {
   name: '@storybook/addon-styling-webpack',
@@ -197,9 +203,9 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
         test: /\.css$/,
         sideEffects: true,
         use: [
-          require.resolve("style-loader"),
+          import.meta.resolve("style-loader"),
           {
-              loader: require.resolve("css-loader"),
+              loader: import.meta.resolve("css-loader"),
               options: {},
           },
         ],
@@ -212,7 +218,7 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: require.resolve('css-loader'),
+            loader: import.meta.resolve('css-loader'),
             options: {
               // Required as image imports should be handled via JS/TS import statements
               url: false,
@@ -232,8 +238,8 @@ You can also take a look at this [example project](https://stackblitz.com/edit/g
     This isn't working in my monorepo.
   </summary>
 
-  Monorepos are a more advanced setup that may require a bit more configuration. To find out more. Refer to the Storybook FAQs on [monorepos](https://storybook.js.org/docs/faq#how-do-i-fix-module-resolution-in-special-environments).
-  
+Monorepos are a more advanced setup that may require a bit more configuration. To find out more. Refer to the Storybook FAQs on [monorepos](https://storybook.js.org/docs/faq#how-do-i-fix-module-resolution-in-special-environments).
+
 </details>
 
 ## 🤝 Contributing

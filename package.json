@@ -18,22 +18,19 @@
     "name": "Shaun Evening",
     "email": "goodeveningshaun@gmail.com"
   },
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "default": "./dist/index.js"
     },
     "./preset": {
       "types": "./dist/preset.d.ts",
-      "import": "./dist/preset.js"
+      "default": "./dist/preset.js"
     },
     "./package.json": "./package.json",
     "./postinstall": "./postinstall.js"
   },
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "bin/**/*",
     "dist/**/*",
@@ -44,20 +41,22 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "pnpm build --watch",
+    "format": "prettier --write .",
     "release": "auto shipit"
   },
   "devDependencies": {
+    "picocolors": "^1.1.0",
     "@types/node": "^22.15.29",
     "auto": "^11.3.0",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
     "storybook": "^10.0.0",
     "tsup": "^8.5.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.3",
     "webpack": "^5.99.9"
   },
   "peerDependencies": {
-    "storybook": "^10.0.0",
+    "storybook": "^10.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0",
     "webpack": "^5.0.0"
   },
   "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6",
