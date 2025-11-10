@@ -1,35 +1,35 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup';
 
 export default defineConfig((options) => [
   {
-    entry: ["src/index.ts", "src/preset.ts"],
-    outDir: "./dist",
+    entry: ['src/index.ts', 'src/preset.ts'],
+    outDir: './dist',
     splitting: false,
     minify: !options.watch,
-    format: ["cjs", "esm"],
+    format: ['esm'],
     dts: {
       resolve: true,
     },
     treeshake: true,
     sourcemap: false,
     clean: true,
-    platform: "browser",
+    platform: 'browser',
     esbuildOptions(options) {
-      options.conditions = ["module"];
+      options.conditions = ['module'];
     },
   },
   {
-    entry: ["src/postinstall.ts"],
-    outDir: "./bin",
+    entry: ['src/postinstall.ts'],
+    outDir: './bin',
     splitting: false,
     minify: !options.watch,
-    format: ["cjs"],
+    format: ['esm'],
     treeshake: true,
-    target: "node20",
+    target: 'node20',
     clean: true,
-    platform: "node",
+    platform: 'node',
     esbuildOptions(options) {
-      options.conditions = ["module"];
+      options.conditions = ['module'];
     },
   },
 ]);

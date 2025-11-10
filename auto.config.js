@@ -1,11 +1,11 @@
-module.exports = {
-  baseBranch: "main",
+export default {
+  baseBranch: 'main',
   labels: [
     {
-      name: "documentation",
-      releaseType: "none",
+      name: 'documentation',
+      releaseType: 'none',
     },
   ],
-  prereleaseBranches: ["next", "prerelease"],
+  prereleaseBranches: ['next', 'prerelease'],
   versionBranches: true,
 };

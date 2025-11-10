@@ -1,1 +1,1 @@
-module.exports = require("./bin/postinstall.js");
+export * from './bin/postinstall.js';
