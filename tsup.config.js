@@ -1,35 +1,35 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup';
 
 export default defineConfig((options) => [
   {
-    entry: ["src/index.ts", "src/preset.ts"],
-    outDir: "./dist",
-    splitting: false,
-    minify: !options.watch,
-    format: ["cjs", "esm"],
-    dts: {
-      resolve: true,
-    },
+    entry: ['src/index.ts', 'src/preset.ts'],
+    outDir: './dist',
+    splitting: true,
+    format: ['esm'],
+dts: true,
     treeshake: true,
     sourcemap: false,
-    clean: true,
-    platform: "browser",
+    /*
+     keep this line commented until https://github.com/egoist/tsup/issues/1270 is resolved
+     clean: options.watch ? false : true,
+    */
+    clean: false,
+    platform: 'browser',
     esbuildOptions(options) {
-      options.conditions = ["module"];
+      options.conditions = ['module'];
     },
   },
   {
-    entry: ["src/postinstall.ts"],
-    outDir: "./bin",
-    splitting: false,
-    minify: !options.watch,
-    format: ["cjs"],
+    entry: ['src/postinstall.ts'],
+    outDir: './bin',
+splitting: true,
+    format: ['esm'],
     treeshake: true,
-    target: "node20",
-    clean: true,
-    platform: "node",
+    target: 'node20',
+    clean: false,
+    platform: 'node',
     esbuildOptions(options) {
-      options.conditions = ["module"];
+      options.conditions = ['module'];
     },
   },
 ]);

@@ -1,6 +1,6 @@
-import type { RuleSetRule, Configuration as WebpackConfig } from "webpack";
+import type { RuleSetRule, Configuration as WebpackConfig } from 'webpack';
 
 export interface AddonStylingOptions {
-  plugins?: WebpackConfig["plugins"];
+  plugins?: WebpackConfig['plugins'];
   rules?: RuleSetRule[];
 }
