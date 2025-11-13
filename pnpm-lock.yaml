@@ -12,8 +12,8 @@ importers:
         specifier: ^22.15.29
         version: 22.15.29
       auto:
-        specifier: ^11.3.0
-        version: 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
+        specifier: 11.1.1
+        version: 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
       picocolors:
         specifier: ^1.1.0
         version: 1.1.1
@@ -38,12 +38,12 @@ packages:
   '@adobe/css-tools@4.4.3':
     resolution: {integrity: sha512-VQKMkwriZbaOgVCby1UDY/LDk5fIjhQicCvVPFqfe+69fWaPWydbWJ3wRt59/YzIwda1I81loas3oCoHxnqvdA==}
 
-  '@auto-it/bot-list@11.3.0':
-    resolution: {integrity: sha512-+izoqAyOSiDVt3WcjVkSvLBV9c82VXLSf3oSWWcCeoxW/YDQ2AoInQ3M3EEyuBP+Yw9KQwGTTYHqpR7ZFkZpDQ==}
+  '@auto-it/bot-list@11.1.1':
+    resolution: {integrity: sha512-uKZ08KC9FUjMBYqiizZ3VlXyEAeRHEAJaeNMqQFPi0jFKRtX/Dm4tAhDXqfQeuOuAsUHNh5Pp+4zOX2RmTPZaA==}
     engines: {node: '>=10.x'}
 
-  '@auto-it/core@11.3.0':
-    resolution: {integrity: sha512-3i7ooAhQJulVDG3gmdOioTXLhpFoS75Z/OsLV8ZkrEaEH/sfxlslqFx20VjWva7gMLl2iO8IjbRnlLhkXy5geg==}
+  '@auto-it/core@11.1.1':
+    resolution: {integrity: sha512-CIQYqJG/pXmWsQjgbjMF6qnwAu7Klrpm5fWHrXpzIEq/3qQfgGmTkauuJRSz9bM5z6pHHCjT1eypVV/EDj9ijg==}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=2.7'
@@ -51,18 +51,18 @@ packages:
       '@types/node':
         optional: true
 
-  '@auto-it/npm@11.3.0':
-    resolution: {integrity: sha512-II7u1trzi2hSd1Vww635DmvHqHlgtVPqr4VPJlq1M7zqPwi9+FcaMW5J/DSqlwJgWRWviWqepIhasUQhj69p0A==}
+  '@auto-it/npm@11.1.1':
+    resolution: {integrity: sha512-I7qWPdU2goCmqdvAEpa6yGwQmzx5YXEsZywqs6uTQXIDuGbFzNt/7jwJNt8p/MNE8M0ra8FJ05eHavBLFZuEfg==}
 
-  '@auto-it/package-json-utils@11.3.0':
-    resolution: {integrity: sha512-wZQLfxYCzqNTlqgYhgm1mZaasA35tuOhGl0npWMZlq0HJ4rbNvUYnjb8bXlyfm/dxTYtYp70IhoV5kv1NmPX8Q==}
+  '@auto-it/package-json-utils@11.1.1':
+    resolution: {integrity: sha512-hk6wKuP7fPonXnP/blPHYS4iQaKZ6s+dVBRPSW7pjWZv6H/A131mWVSQC59nhe8lqZhbQ2MrDH4xxfhYnq21sA==}
     engines: {node: '>=10.x'}
 
-  '@auto-it/released@11.3.0':
-    resolution: {integrity: sha512-8Aw8WGuTi3giKU9+KEutebLhhX+4eNVa7SmVLaRIFECUxI/+PS20yMbWsYjsyk5qju1MdpEQGPOW/4U5OZ6Bdw==}
+  '@auto-it/released@11.1.1':
+    resolution: {integrity: sha512-iRUebl2q5V7hFEgScGVUMUVoOXrFFi5O280hUCpZxmd6kkG2v7Kl+Weii5zKpd7YSqG0HibJCD+LVwPClAfrCA==}
 
-  '@auto-it/version-file@11.3.0':
-    resolution: {integrity: sha512-+ax5/oXKLc5moXrSJuGm3eC10YFapWFwS5MEVwdspPM2YJn1ImuhagXOq5FJ1XK8aeHILZI+2iA+YB5wI1bcLA==}
+  '@auto-it/version-file@11.1.1':
+    resolution: {integrity: sha512-KHKunip2nXWKd7zJ0hdALojY+E6sTdmxuq9SXYgTMXUcZw2BtxunVSK1hb2wmS6iUH4CCILk12dHksAO5BFzeQ==}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -678,8 +678,8 @@ packages:
     resolution: {integrity: sha512-KbWgR8wOYRAPekEmMXrYYdc7BRyhn2Ftk7KWfMUnQ43hFdojWEFRxhhRUm3/OFEdPa1r0KAvTTg9YQK57xTe0g==}
     engines: {node: '>=0.8'}
 
-  auto@11.3.0:
-    resolution: {integrity: sha512-7FWjxrfsVKaToAcjxsijdpL8prbffZk5ovPCTVDk6c0Yq3pNKd2AMm5fkPR5lDbnYNeoU7lbm+0wVtJSoTQhpw==}
+  auto@11.1.1:
+    resolution: {integrity: sha512-mOucdDWMjtuBDH8phH9Z0s1dD4uFrFIhYQ/Zh4wCH2uB3eEf8qZbu20DLOWCfj1zEUU2gxqVAuqJD4OyLWvaSQ==}
     engines: {node: '>=10.x'}
     hasBin: true
 
@@ -1886,11 +1886,11 @@ snapshots:
 
   '@adobe/css-tools@4.4.3': {}
 
-  '@auto-it/bot-list@11.3.0': {}
+  '@auto-it/bot-list@11.1.1': {}
 
-  '@auto-it/core@11.3.0(@types/node@22.15.29)(typescript@5.9.3)':
+  '@auto-it/core@11.1.1(@types/node@22.15.29)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/bot-list': 11.3.0
+      '@auto-it/bot-list': 11.1.1
       '@endemolshinegroup/cosmiconfig-typescript-loader': 3.0.2(cosmiconfig@7.0.0)(typescript@5.9.3)
       '@octokit/core': 3.6.0
       '@octokit/plugin-enterprise-compatibility': 1.3.0
@@ -1939,10 +1939,10 @@ snapshots:
       - encoding
       - supports-color
 
-  '@auto-it/npm@11.3.0(@types/node@22.15.29)(typescript@5.9.3)':
+  '@auto-it/npm@11.1.1(@types/node@22.15.29)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
-      '@auto-it/package-json-utils': 11.3.0
+      '@auto-it/core': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/package-json-utils': 11.1.1
       await-to-js: 3.0.0
       endent: 2.1.0
       env-ci: 5.5.0
@@ -1963,15 +1963,15 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/package-json-utils@11.3.0':
+  '@auto-it/package-json-utils@11.1.1':
     dependencies:
       parse-author: 2.0.0
       parse-github-url: 1.0.2
 
-  '@auto-it/released@11.3.0(@types/node@22.15.29)(typescript@5.9.3)':
+  '@auto-it/released@11.1.1(@types/node@22.15.29)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/bot-list': 11.3.0
-      '@auto-it/core': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/bot-list': 11.1.1
+      '@auto-it/core': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
       deepmerge: 4.3.1
       fp-ts: 2.16.10
       io-ts: 2.2.22(fp-ts@2.16.10)
@@ -1984,9 +1984,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/version-file@11.3.0(@types/node@22.15.29)(typescript@5.9.3)':
+  '@auto-it/version-file@11.1.1(@types/node@22.15.29)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
       fp-ts: 2.16.10
       io-ts: 2.2.22(fp-ts@2.16.10)
       semver: 7.7.2
@@ -2561,12 +2561,12 @@ snapshots:
 
   author-regex@1.0.0: {}
 
-  auto@11.3.0(@types/node@22.15.29)(typescript@5.9.3):
+  auto@11.1.1(@types/node@22.15.29)(typescript@5.9.3):
     dependencies:
-      '@auto-it/core': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
-      '@auto-it/npm': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
-      '@auto-it/released': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
-      '@auto-it/version-file': 11.3.0(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/npm': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/released': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
+      '@auto-it/version-file': 11.1.1(@types/node@22.15.29)(typescript@5.9.3)
       await-to-js: 3.0.0
       chalk: 4.1.2
       command-line-application: 0.10.1
