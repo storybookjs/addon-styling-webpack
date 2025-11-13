@@ -15,7 +15,7 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noImplicitAny": true,
-    "lib": ["es2023", "dom", "dom.iterable"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "baseUrl": ".",
     "rootDir": "./src"
   },
