@@ -1,12 +1,12 @@
 import { defineConfig } from 'tsup';
 
-export default defineConfig((options) => [
+export default defineConfig(() => [
   {
     entry: ['src/index.ts', 'src/preset.ts'],
     outDir: './dist',
     splitting: true,
     format: ['esm'],
-dts: true,
+    dts: true,
     treeshake: true,
     sourcemap: false,
     /*
@@ -22,10 +22,10 @@ dts: true,
   {
     entry: ['src/postinstall.ts'],
     outDir: './bin',
-splitting: true,
+    splitting: true,
     format: ['esm'],
     treeshake: true,
-    target: 'node20',
+    target: 'node22',
     clean: false,
     platform: 'node',
     esbuildOptions(options) {
