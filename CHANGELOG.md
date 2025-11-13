@@ -1,3 +1,20 @@
+# v3.0.0 (Thu Nov 13 2025)
+
+#### 💥 Breaking Change
+
+- Upgrade addon to be compatible with Storybook v10 [#33](https://github.com/storybookjs/addon-styling-webpack/pull/33) ([@MaxLikesCode](https://github.com/MaxLikesCode) [@ndelangen](https://github.com/ndelangen))
+
+#### 🐛 Bug Fix
+
+- Update Node.js version [#36](https://github.com/storybookjs/addon-styling-webpack/pull/36) ([@ndelangen](https://github.com/ndelangen))
+
+#### Authors: 2
+
+- Max ([@MaxLikesCode](https://github.com/MaxLikesCode))
+- Norbert de Langen ([@ndelangen](https://github.com/ndelangen))
+
+---
+
 # v2.0.0 (Tue Jun 03 2025)
 
 #### 💥 Breaking Change
