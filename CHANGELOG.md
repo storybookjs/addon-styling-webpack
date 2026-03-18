@@ -1,3 +1,15 @@
+# v3.0.1 (Wed Mar 18 2026)
+
+#### 🐛 Bug Fix
+
+- add support for Storybook 10.4 alpha [#38](https://github.com/storybookjs/addon-styling-webpack/pull/38) ([@yannbf](https://github.com/yannbf))
+
+#### Authors: 1
+
+- Yann Braga ([@yannbf](https://github.com/yannbf))
+
+---
+
 # v3.0.0 (Thu Nov 13 2025)
 
 #### 💥 Breaking Change
