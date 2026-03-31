@@ -1,3 +1,15 @@
+# v3.0.2 (Tue Mar 31 2026)
+
+#### 🐛 Bug Fix
+
+- Merge pull request #35 from storybookjs/fix-auto-config [#35](https://github.com/storybookjs/addon-styling-webpack/pull/35) ([@Sidnioulz](https://github.com/Sidnioulz))
+
+#### Authors: 1
+
+- Steve Dodier-Lazaro ([@Sidnioulz](https://github.com/Sidnioulz))
+
+---
+
 # v3.0.1 (Wed Mar 18 2026)
 
 #### 🐛 Bug Fix
