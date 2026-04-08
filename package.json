@@ -42,12 +42,15 @@
     "build": "tsup",
     "build:watch": "pnpm build --watch",
     "format": "prettier --write .",
-    "release": "auto shipit"
+    "release": "pnpm build && pnpm changeset publish",
+    "changeset": "changeset"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.6",
     "@types/node": "^22.15.29",
-    "auto": "^11.3.0",
     "picocolors": "^1.1.0",
+    "pkg-pr-new": "^0.0.57",
     "prettier": "^3.5.3",
     "storybook": "^10.0.0",
     "tsup": "^8.5.0",
