@@ -1,5 +1,13 @@
 # @storybook/addon-styling-webpack
 
+## 3.0.3
+
+### Patch Changes
+
+- [#39](https://github.com/storybookjs/addon-styling-webpack/pull/39) [`6baefc3`](https://github.com/storybookjs/addon-styling-webpack/commit/6baefc30414cb1d8ee502e2c91e302c5454ff834) Thanks [@JReinhold](https://github.com/JReinhold)! - Add npm provenance and support Storybook canary releases
+
+- [#40](https://github.com/storybookjs/addon-styling-webpack/pull/40) [`e9472ab`](https://github.com/storybookjs/addon-styling-webpack/commit/e9472ab6178a91156c551d0c137665f60ee3cc36) Thanks [@JReinhold](https://github.com/JReinhold)! - Broaden the storybook peer dependency range to include 11.0 canaries.
+
 ## 3.0.2
 
 #### 🐛 Bug Fix
